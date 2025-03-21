@@ -17,7 +17,7 @@ public class Calculator {
         return Math.pow(base,exponent);
     }
 
-    public double divide(double a, double b){
+    public double divide(int a, int b){
         return a / b;
     }
 }

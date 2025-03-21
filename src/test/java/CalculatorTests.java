@@ -36,6 +36,11 @@ public class CalculatorTests {
         assertEquals("/ by zero", exception.getMessage());
     }
 
-
+    @Test
+    void divedeNumbers2(){
+        Calculator calculator = new Calculator();
+        ArithmeticException exception = assertThrows(ArithmeticException.class, () -> calculator.divide(2,0));
+        assertEquals("/ by zero", exception.getMessage());
+    }
 
 }
